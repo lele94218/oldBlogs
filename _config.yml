@@ -79,7 +79,7 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-    comments :
+  comments :
     provider : duoshuo
     disqus :
       short_name : jekyllbootstrap

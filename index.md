@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Make Plan Everyday
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
@@ -13,17 +13,19 @@ Here to recommend some references:
 	<li>Spring in Action, 4th Edition</li>
 </ul>
 
-## Completed List 
+## Completed List
 
-**Till 01/29/2016**
+----------
 
+
+**1/29/2016**
 <ul>
 	<li>Ioc (Inversion of Control)</li>
 	<li>DI (Dependency Injection)</li>
 </ul>
 
 ## To-Do List
-
+----------
 <ul>
 	<li>Resource Management</li>
 </ul>

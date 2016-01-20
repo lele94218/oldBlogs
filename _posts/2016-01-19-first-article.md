@@ -2,17 +2,17 @@
 layout: post
 title: "First Article"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
 
+```java
+public class Singleton {  
 
-{% highlight java %}
-public class HelloWorld {
-    public static void main(String args[]) {
-      System.out.println("Hello World!");
-    }
-}
-{% endhighlight %}
-
+	//Global accession
+    public static Singleton getInstance() {  
+        return InstanceHolder.INSTANCE;  
+    }   
+} 
+```

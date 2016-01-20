@@ -12,18 +12,17 @@ Here to recommend some references:
 - **Spring in Action, 4th Edition**
 
 ### To-Do List
-------
+
 - **Resource Management**
 
-
 ### Completed List
-------
+
 **1/19/2016**
 
 - **IoC** (Inversion of Control)
 
-
 - **DI** (Dependency Injection)
+
 
 
 

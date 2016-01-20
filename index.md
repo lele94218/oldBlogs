@@ -13,15 +13,16 @@ Here to recommend some references:
 
 ## To-Do List
 
-<ul>
-	<li>Resource Management</li>
-</ul>
+- **Resource Management**
 
 
 ## Completed List
 
 **1/19/2016**
+
 - **IoC** (Inversion of Control)
+
+
 - **DI** (Dependency Injection)
 
 

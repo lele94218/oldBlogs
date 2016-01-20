@@ -9,25 +9,21 @@ Now, I start learning Java in Spring with [跟我学spring3系列](http://jinnia
 
 Here to recommend some references:
 
-<ul>
-	<li>Spring in Action, 4th Edition</li>
-</ul>
-
-## Completed List
-
-----------
-
-
-**1/29/2016**
-<ul>
-	<li>IoC (Inversion of Control)</li>
-	<li>DI (Dependency Injection)</li>
-</ul>
+- **Spring in Action, 4th Edition**
 
 ## To-Do List
-----------
+
 <ul>
 	<li>Resource Management</li>
 </ul>
+
+
+## Completed List
+
+**1/19/2016**
+- **IoC** (Inversion of Control)
+- **DI** (Dependency Injection)
+
+
 
 

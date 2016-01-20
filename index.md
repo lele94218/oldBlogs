@@ -11,13 +11,13 @@ Here to recommend some references:
 
 - **Spring in Action, 4th Edition**
 
-## To-Do List
-
+### To-Do List
+------
 - **Resource Management**
 
 
-## Completed List
-
+### Completed List
+------
 **1/19/2016**
 
 - **IoC** (Inversion of Control)

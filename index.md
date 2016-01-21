@@ -5,7 +5,7 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Now, I start learning Java in Spring with [Follow me Learning Spring 3 (Chinese) ](http://jinnianshilongnian.iteye.com/category/206533) which is friend for freshman. I insist that Spring is an useful MVC framework, which could implement with J2EE, Android, .NET, etc.
+Now, I start learning Java in Spring with [Follow me Learning Spring 3 (Chinese) ](http://jinnianshilongnian.iteye.com/category/206533) which is friendly for freshman. I insist that Spring is an useful MVC framework, which could implement with J2EE, Android, .NET, etc.
 
 Here to recommend some references:
 
@@ -13,11 +13,13 @@ Here to recommend some references:
 
 ### To-Do List
 
-- [ ] 4.1 - **Resource Management**
+
 
 ### Completed List
 
 **1/21/2016**
+
+- [x] 4.1 - **Resource Management**
 
 - [x] 3.2 - **Bean Scopes**
 

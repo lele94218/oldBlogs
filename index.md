@@ -17,6 +17,10 @@ Here to recommend some references:
 
 ### Completed List
 
+**1/22/2016**
+
+- [x] 4.2 - **Resource Using**
+
 **1/21/2016**
 
 - [x] 4.1 - **Resource Management**

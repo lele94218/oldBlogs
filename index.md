@@ -15,7 +15,7 @@ tagline: Supporting tagline
 
 - Yellow: **Learning**.  
 
-### LearningLog
+### My Log
 
 - UPD： `2/22/2016`
 

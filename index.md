@@ -7,7 +7,7 @@ tagline: Supporting tagline
 
 ## Process for _Java_
 
-![Process for Java](/learning.png)
+![Process for Java](E:\gitWorks\lele94218.github.com/learning.png)
 
 - Green: **Known**
 

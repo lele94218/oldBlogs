@@ -7,15 +7,15 @@ tagline: Supporting tagline
 
 ## Process for _Java_
 
-![Process for Java](/learning.png)
+- Green: **Known**.
 
-- Green: **Known**
+- Red: **Need to Learn**.
 
-- Red: **Need to Learn**
+- Yellow: **Learning**.
 
-- Yellow: **Learning**.  
+![Process for Java](/learning.png) 
 
-### My Log
+## My Log
 
 - UPD： `2/22/2016`
 
@@ -33,12 +33,12 @@ Here to recommend some references:
 
 - **Spring in Action, 3th Edition**
 
-### To-Do List
+## To-Do List
 
 - [ ] 5.1 **Java Web**
 
 
-### Completed List
+## Completed List
 
 `2/2/2016`
 

@@ -13,17 +13,21 @@ tagline: Supporting tagline
 
 - Yellow: **Learning**.
 
-![Process for Java](/learning.png) 
+![Process for Java](/learning.png)
 
 ## My Log
 
-- UPD： `2/22/2016`
+- UPD: `2/12/2016`
+
+Almost finish _Java Web_ Tutorials!!!!
+
+- UPD: `2/2/2016`
 
 I stop learning _Spring_ since I need to study sort of _Java Web_. In several days, I searched a very interesting video tutorials [Atguigu Java Tutorials Serials](http://www.atguigu.com/download.shtml#javascript). After learning the _Servlet_ and _JSP_, I know my shortcomings with _Java Web_.
 
 **KEEP LEARNING!!!**
 
-- UPD： `1/19/2016`
+- UPD: `1/19/2016`
 
 I start learning Java in Spring with [Follow me Learning Spring 3 (Chinese) ](http://jinnianshilongnian.iteye.com/category/206533) which is friendly for freshman. I insist that Spring is an useful MVC framework, which could implement with J2EE, Android, .NET, etc.
 
@@ -39,6 +43,20 @@ Here to recommend some references:
 
 
 ## Completed List
+
+`2/16/2016`
+
+- [x] 11.0 **Listener**
+
+- [x] 10.0 **Filter**
+
+- [x] 9.0 **EL & JSTL**
+
+- [x] 8.0 **HttpSession**
+
+- [x] 7.0 **Cookie**
+
+- [x] 6.0 **MVC**
 
 `2/2/2016`
 

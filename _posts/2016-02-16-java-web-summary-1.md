@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "_Java Web_ 系统总结 (一)"
+title: "Java Web 系统总结 (一)"
 description: ""
 category: "Java Web"
 tags: ["Java Web", "Java"]

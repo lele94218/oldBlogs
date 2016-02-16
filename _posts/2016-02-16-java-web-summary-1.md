@@ -16,11 +16,11 @@ tags: ["Java Web", "Java"]
 
   可以理解在 `request` 作用域范围内的一个存储空间, 实现方法是将键值对放入一个 `HashMap`.
 
- ```java
- Object getAttribute(String name);
- void setAttribute(String name, Object o);
- void removeAttribute(String name);
- ```
+   ```java
+   Object getAttribute(String name);
+   void setAttribute(String name, Object o);
+   void removeAttribute(String name);
+   ```
 
 - **Paramater** 相关:
 
@@ -163,7 +163,7 @@ tags: ["Java Web", "Java"]
 
 以上总结的三个隐含对象 `request` `response` `session`, 不只是对于 `JSP` , 而在整个 `Java Web` 技术中都极为重要, 对其常用的实现方法必须使用熟练.
 
-**4. _Application (ServletContext) _**
+**4. _Application (ServletContext)_**
 
 - **Attribute** 相关:
 

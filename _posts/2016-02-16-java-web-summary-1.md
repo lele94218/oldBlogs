@@ -16,11 +16,12 @@ tags: ["Java Web", "Java"]
 
   可以理解在 `request` 作用域范围内的一个存储空间, 实现方法是将键值对放入一个 `HashMap`.
 
-   ```java
-   Object getAttribute(String name);
-   void setAttribute(String name, Object o);
-   void removeAttribute(String name);
-   ```
+
+  ```java
+  Object getAttribute(String name);
+  void setAttribute(String name, Object o);
+  void removeAttribute(String name);
+  ```
 
 - **Paramater** 相关:
 

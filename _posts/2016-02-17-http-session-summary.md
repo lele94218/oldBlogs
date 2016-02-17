@@ -21,7 +21,7 @@ Session 在 web 开发中是一个非常重要的概念, 这个概念很抽象,�
 
     一个常见的误解是以为 session 在有客户端访问时就被创建, 然而事实是直到某 server 端程序调用 `HttpServletRequest.getSession(true)` 这样的语句时才被创建,注意如果JSP没有显示的使用 `<% @page session="false"%>` 关闭 session, **则 JSP 文件在编译成 Servlet 时将会自动加上这样一条语句 `HttpSession session = HttpServletRequest.getSession(true)`; 这也是JSP中隐含的 session对象的来历.**
 
-    由于session会消耗内存资源, 因此, 如果不打算使用session,应该在所有的JSP中关闭它.
+    由于 session 会消耗内存资源, 因此, 如果不打算使用 session, 应该在所有的 JSP 中关闭它.
 
     引申:
 

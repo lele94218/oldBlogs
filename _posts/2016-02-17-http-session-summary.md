@@ -9,7 +9,7 @@ tags: ["Java Web", "Java"]
 
 > 转载于 [深入理解 HTTP Session](http://lavasoft.blog.51cto.com/62575/275589)
 
-session 在 web 开发中是一个非常重要的概念, 这个概念很抽象,很难定义,也是最让人迷惑的一个名词, 也是最多被滥用的名字之一, 在不同的场合,session一次的含义也很不相同. 这里只探讨 HTTP Session.
+Session 在 web 开发中是一个非常重要的概念, 这个概念很抽象,很难定义,也是最让人迷惑的一个名词, 也是最多被滥用的名字之一, 在不同的场合,session一次的含义也很不相同. 这里只探讨 HTTP Session.
 
 为了说明问题,这里基于 Java Servlet 理解 Session 的概念与原理,这里所说 Servlet 已经涵盖了 JSP 技术,因为 JSP 最终也会被编译为 Servlet,两者有着相同的本质.
 
@@ -19,25 +19,25 @@ session 在 web 开发中是一个非常重要的概念, 这个概念很抽象,�
 
 2. Session 创建的时间是:
 
-  一个常见的误解是以为 session 在有客户端访问时就被创建, 然而事实是直到某 server 端程序调用 `HttpServletRequest.getSession(true)` 这样的语句时才被创建,注意如果JSP没有显示的使用 `<% @page session="false"%>` 关闭 session, **则 JSP 文件在编译成 Servlet 时将会自动加上这样一条语句 `HttpSession session = HttpServletRequest.getSession(true)`; 这也是JSP中隐含的 session对象的来历.**
+    一个常见的误解是以为 session 在有客户端访问时就被创建, 然而事实是直到某 server 端程序调用 `HttpServletRequest.getSession(true)` 这样的语句时才被创建,注意如果JSP没有显示的使用 `<% @page session="false"%>` 关闭 session, **则 JSP 文件在编译成 Servlet 时将会自动加上这样一条语句 `HttpSession session = HttpServletRequest.getSession(true)`; 这也是JSP中隐含的 session对象的来历.**
 
-  由于session会消耗内存资源, 因此, 如果不打算使用session,应该在所有的JSP中关闭它.
+    由于session会消耗内存资源, 因此, 如果不打算使用session,应该在所有的JSP中关闭它.
 
-  引申:
+    引申:
 
-  - 访问 `*.html` 的静态资源因为不会被编译为 Servlet, 也就不涉及 session 的问题.
+    - 访问 `*.html` 的静态资源因为不会被编译为 Servlet, 也就不涉及 session 的问题.
 
-  - 当 JSP 页面没有显式禁止 session 的时候, 在打开浏览器第一次请求该 jsp 的时候, 服务器会自动为其创建一个 session, 并赋予其一个 sessionID, 发送给客户端的浏览器. 以后客户端接着请求本应用中其他资源的时候, 会自动在请求头上添加:
-  `Cookie:JSESSIONID` = 客户端第一次拿到的 session ID
-  这样, 服务器端在接到请求时候, 就会收到 session ID, 并根据 ID 在内存中找到之前创建的 session 对象, 提供给请求使用. 这也是 session 使用的基本原理 ---- 搞不懂这个, 就永远不明白session的原理.
+    - 当 JSP 页面没有显式禁止 session 的时候, 在打开浏览器第一次请求该 jsp 的时候, 服务器会自动为其创建一个 session, 并赋予其一个 sessionID, 发送给客户端的浏览器. 以后客户端接着请求本应用中其他资源的时候, 会自动在请求头上添加:
+    `Cookie:JSESSIONID` = 客户端第一次拿到的 session ID
+    这样, 服务器端在接到请求时候, 就会收到 session ID, 并根据 ID 在内存中找到之前创建的 session 对象, 提供给请求使用. 这也是 session 使用的基本原理 ---- 搞不懂这个, 就永远不明白session的原理.
 
 3. Session删除的时间是:
 
-  - Session 超时: 超时指的是连续一定时间服务器没有收到该 Session 所对应客户端的请求,并且这个时间超过了服务器设置的 Session 超时的最大时间.
+    - Session 超时: 超时指的是连续一定时间服务器没有收到该 Session 所对应客户端的请求,并且这个时间超过了服务器设置的 Session 超时的最大时间.
 
-  - 程序调用 `HttpSession.invalidate()`
+    - 程序调用 `HttpSession.invalidate()`
 
-  - 服务器关闭或服务停止
+    - 服务器关闭或服务停止
 
 4. session 存放在哪里: 服务器端的内存中. 不过 session 可以通过特殊的方式做持久化管理.
 
@@ -45,13 +45,13 @@ session 在 web 开发中是一个非常重要的概念, 这个概念很抽象,�
 
 6. session 会因为浏览器的关闭而删除吗？
 
-  不会, session 只会通过上面提到的方式去关闭.
+    不会, session 只会通过上面提到的方式去关闭.
 
 7. 同一客户端机器多次请求同一个资源, session 一样吗？
 
-  一般来说,每次请求都会新创建一个 session.
+    一般来说,每次请求都会新创建一个 session.
 
-  其实, 这个也不一定的, 总结下: **对于多标签的浏览器 (比如 Chrome 浏览器) 来说, 在一个浏览器窗口中, 多个标签同时访问一个页面, session是一个. 对于多个浏览器窗口之间, 同时或者相隔很短时间访问一个页面, session是多个的, 和浏览器的进程有关. 对于一个同一个浏览器窗口, 直接录入url访问同一应用的不同资源, session是一样的.**
+    其实, 这个也不一定的, 总结下: **对于多标签的浏览器 (比如 Chrome 浏览器) 来说, 在一个浏览器窗口中, 多个标签同时访问一个页面, session是一个. 对于多个浏览器窗口之间, 同时或者相隔很短时间访问一个页面, session是多个的, 和浏览器的进程有关. 对于一个同一个浏览器窗口, 直接录入url访问同一应用的不同资源, session是一样的.**
 
 8. session 是一个容器,可以存放会话过程中的任何对象.
 
